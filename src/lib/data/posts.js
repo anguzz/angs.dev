@@ -1,6 +1,9 @@
 import { browser } from '$app/environment'
+// @ts-ignore
 import { format } from 'date-fns'
+// @ts-ignore
 import { parse } from 'node-html-parser'
+// @ts-ignore
 import readingTime from 'reading-time/lib/reading-time.js'
 
 // we require some server-side APIs to parse all metadata
@@ -11,10 +14,13 @@ if (browser) {
 // Get all posts and add metadata
 export const posts = Object.entries(import.meta.glob('/posts/**/*.md', { eager: true }))
   .map(([filepath, post]) => {
+    // @ts-ignore
     const html = parse(post.default.render().html)
+    // @ts-ignore
     const preview = post.metadata.preview ? parse(post.metadata.preview) : html.querySelector('p')
 
     return {
+      // @ts-ignore
       ...post.metadata,
 
       // generate the slug from the file path
@@ -28,9 +34,11 @@ export const posts = Object.entries(import.meta.glob('/posts/**/*.md', { eager: 
       isIndexFile: filepath.endsWith('/index.md'),
 
       // format date as yyyy-MM-dd
+      // @ts-ignore
       date: post.metadata.date
         ? format(
             // offset by timezone so that the date is correct
+            // @ts-ignore
             addTimezoneOffset(new Date(post.metadata.date)),
             'yyyy-MM-dd'
           )
@@ -55,6 +63,7 @@ export const posts = Object.entries(import.meta.glob('/posts/**/*.md', { eager: 
     previous: allPosts[index + 1]
   }))
 
+// @ts-ignore
 function addTimezoneOffset(date) {
   const offsetInMilliseconds = new Date().getTimezoneOffset() * 60 * 1000
   return new Date(new Date(date).getTime() + offsetInMilliseconds)

@@ -10,7 +10,8 @@ export const lastName = ''
 export const name = `${firstName} ${lastName}`
 
 // Used for the landing page & footer of posts
-export const avatar = 'https://randomuser.me/api/portraits/lego/2.jpg'
+
+export const bio_img = 'bio_img.png'
 export const bio = "My interests include software development and cybersecurity. I work in Information Technology and am in grad school for Computer Science at CSUF. In my free time, I like to lift weights, see live music, play video games, learn about cars, and try new foods. My favorite game is the Elder Scrolls series, and my favorite food is sushi."
 
 

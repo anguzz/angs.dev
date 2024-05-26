@@ -1,13 +1,13 @@
 <script>
   import SocialLinks from '$lib/components/SocialLinks.svelte'
-  import { bio, name } from '$lib/info.js'
+  import { bio, name,bio_img } from '$lib/info.js'
 </script>
 
  <!-- bio -->
  <section class="flex justify-start items-center gap-16 pt-8 pb-16">
      <div class="bio">
        <img
-       src='https://www.angs.dev/profile.png'
+       src={bio_img}
        alt={name}
        class="block h-24 w-24 mb-5 origin-left pointer-events-auto rounded-full ring-zinc-200 dark:ring-zinc-700"
      />

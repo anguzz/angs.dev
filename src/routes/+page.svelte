@@ -9,7 +9,7 @@
       companyName: "Niagara Bottling",
       date: "2023-current",  
       details: [
-        { category: "Skills", content: "Active directory, Entra, Oracle, Cisco, MS SQL, Sophos" },
+        { category: "Skills", content: "Active directory, Entra, Oracle, Cisco, MS SQL, Sophos, RDP, VNC, Wireshark" },
         { category: "Languages", content: "Python, Powershell, SQL" },
       ]
     },
@@ -23,16 +23,14 @@
       ]
     },
     {
-      title: "Web developer",
+      title: "Web developer/marketing researcher",
       companyName: "db&m Media, Inc.",
       date: "2021",  
       details: [
-        { category: "Framework", content: "Wordpress" },
-        { category: "Languages", content: "HTML, CSS, JS" },
+        { category: "Framework", content: "Wordpress, Excel" },
+        { category: "Languages", content: "HTML, CSS, JS, PHP" },
       ]
     },
-   
-    
   ];
 </script>
 

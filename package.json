@@ -24,6 +24,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@tailwindcss/typography": "^0.5.13",
 		"heroicons-svelte": "^2.0.0"
 	}
 }
