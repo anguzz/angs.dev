@@ -25,10 +25,6 @@ export const instagram = ''
 export const resume = '';
 export const navMenu = [
      {
-          title: 'Blog',
-          link: 'https://blog.angs.dev/posts'
-     }, 
-     {
           title: 'Links',
           link: 'https://list.angs.dev/'
      }, 
