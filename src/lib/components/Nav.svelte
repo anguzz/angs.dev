@@ -40,6 +40,9 @@ import MoonIcon from '$lib/components/icons/MoonIcon.svelte';
           <li>
             <a href="https://list.angs.dev/" class="inline-block px-4 py-2 border-2 text-sm rounded-full border-blue-500  font-medium text-zinc-900 dark:text-zinc-50 hover:bg-indigo-800 hover:text-white focus:relative">Links</a>
           </li>
+          <li>
+            <a href="https://live-journal.angs.dev/" class="inline-block px-4 py-2 border-2 text-sm rounded-full border-blue-500  font-medium text-zinc-900 dark:text-zinc-50 hover:bg-indigo-800 hover:text-white focus:relative">Music Journal</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -87,7 +90,10 @@ import MoonIcon from '$lib/components/icons/MoonIcon.svelte';
         </li>
       {/each}
       <li>
-        <a href="mailto:santoyox714@gmail.com" class="inline-block px-4 py-2  text-sm rounded w-full border-indigo-500  font-medium text-zinc-900 dark:text-zinc-50 hover:bg-indigo-800 hover:text-white focus:relative">Blog</a>
+        <a href="https://blog.angs.dev" class="inline-block px-4 py-2  text-sm rounded w-full border-indigo-500  font-medium text-zinc-900 dark:text-zinc-50 hover:bg-indigo-800 hover:text-white focus:relative">Blog</a>
+      </li>
+      <li>
+        <a href="https://live-journal.angs.dev/" class="inline-block px-4 py-2  text-sm rounded w-full border-indigo-500  font-medium text-zinc-900 dark:text-zinc-50 hover:bg-indigo-800 hover:text-white focus:relative">Music Journal</a>
       </li>
       </ul>
     </div>
