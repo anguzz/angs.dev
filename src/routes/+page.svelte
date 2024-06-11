@@ -23,7 +23,7 @@
       ]
     },
     {
-      title: "Web developer/marketing researcher",
+      title: "Web developer/data specialist",
       companyName: "db&m Media, Inc.",
       date: "2021",  
       details: [
