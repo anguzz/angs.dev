@@ -5,7 +5,7 @@
 
   let skills = [
     {
-      title: "IT specialist II ",
+      title: "Information Technology",
       companyName: "Niagara Bottling",
       date: "2023-current",  
       details: [
