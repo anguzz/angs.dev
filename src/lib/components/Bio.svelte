@@ -16,7 +16,7 @@
          <h1
            class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl"
          >
-          Hi, I'm Angel - IT professional, CSUF grad student.
+          Hello!
          </h1>
          <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
              {bio}

@@ -5,12 +5,21 @@
 
   let skills = [
     {
-      title: "Information Technology",
-      companyName: "Niagara Bottling",
-      date: "2023-current",  
+      title: "System admin",
+      companyName: "Foundation building material",
+      date: "2025-current",  
       details: [
-        { category: "Skills", content: "Active directory, Entra, Oracle, Cisco, MS SQL, Sophos, RDP, VNC, Wireshark" },
-        { category: "Languages", content: "Python, Powershell, SQL" },
+        { category: "Skills", content: "" },
+        { category: "Languages", content: "" },
+      ]
+    },
+    {
+      title: "IT specialist II",
+      companyName: "Niagara Bottling",
+      date: "2023-2025",  
+      details: [
+        { category: "Skills", content: "Active directory, Windows Server, Entra, Cisco Duo, MS SQL, Sophos, RDP, VNC, Wireshark, Intune" },
+        { category: "Languages", content: "Python, Powershell, SQL, Javascript" },
       ]
     },
     {
