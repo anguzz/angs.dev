@@ -5,34 +5,34 @@
 
   let skills = [
     {
-      title: "System admin",
+      title: "System Administrator",
       companyName: "Foundation building material",
       date: "2025-current",  
       details: [
-        { category: "Skills", content: "" },
-        { category: "Languages", content: "" },
+        { category: "Tools & Platforms", content: "Entra, Intune, Crowdstrike, ArcticWolf, GraphAPI, Automox"},
+        { category: "Languages", content: "Python, Powershell" },
       ]
     },
     {
-      title: "IT specialist II",
+      title: "IT Specialist II",
       companyName: "Niagara Bottling",
       date: "2023-2025",  
       details: [
-        { category: "Skills", content: "Active directory, Windows Server, Entra, Cisco Duo, MS SQL, Sophos, RDP, VNC, Wireshark, Intune" },
+        { category: "Tools & Platforms", content: "Active directory, Windows Server, Entra, Cisco Duo, MS SQL, Sophos, RDP, VNC, Wireshark, Intune" },
         { category: "Languages", content: "Python, Powershell, SQL, Javascript" },
       ]
     },
     {
-      title: "Database Admin Intern",
+      title: "Database Administrator",
       companyName: "Ingram Micro",
-      date: "Summer 2022",
+      date: "Summer 2022 - Intern",
       details: [
-        { category: "Skills", content: "Oracle 19c, SSH, Linux" },
+        { category: "Tools & Platforms", content: "Oracle 19c, SSH, Linux" },
         { category: "Languages", content: "SQL, Bash" },
       ]
     },
     {
-      title: "Web developer/data specialist",
+      title: "Web developer",
       companyName: "db&m Media, Inc.",
       date: "2021",  
       details: [

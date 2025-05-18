@@ -33,12 +33,10 @@ import MoonIcon from '$lib/components/icons/MoonIcon.svelte';
       <nav aria-label="Global">
         <ul class="flex items-center gap-2 text-sm">
           {#each navMenu as item}
-          <li>
-            <a href="https://blog.angs.dev/posts" class="inline-block px-4 py-2 border-2 text-sm rounded-full border-blue-500  font-medium text-zinc-900 dark:text-zinc-50 hover:bg-indigo-800 hover:text-white focus:relative">Blog</a>
-          </li>
+         
           {/each}
           <li>
-            <a href="https://list.angs.dev/" class="inline-block px-4 py-2 border-2 text-sm rounded-full border-blue-500  font-medium text-zinc-900 dark:text-zinc-50 hover:bg-indigo-800 hover:text-white focus:relative">Links</a>
+            <a href="https://list.angs.dev/" class="inline-block px-4 py-2 border-2 text-sm rounded-full border-blue-500  font-medium text-zinc-900 dark:text-zinc-50 hover:bg-indigo-800 hover:text-white focus:relative">Resources</a>
           </li>
           <li>
             <a href="https://music.angs.dev/" class="inline-block px-4 py-2 border-2 text-sm rounded-full border-blue-500  font-medium text-zinc-900 dark:text-zinc-50 hover:bg-indigo-800 hover:text-white focus:relative">Music Journal</a>
@@ -89,9 +87,6 @@ import MoonIcon from '$lib/components/icons/MoonIcon.svelte';
           </a>
         </li>
       {/each}
-      <li>
-        <a href="https://blog.angs.dev" class="inline-block px-4 py-2  text-sm rounded w-full border-indigo-500  font-medium text-zinc-900 dark:text-zinc-50 hover:bg-indigo-800 hover:text-white focus:relative">Blog</a>
-      </li>
       <li>
         <a href="https://music.angs.dev/" class="inline-block px-4 py-2  text-sm rounded w-full border-indigo-500  font-medium text-zinc-900 dark:text-zinc-50 hover:bg-indigo-800 hover:text-white focus:relative">Music Journal</a>
       </li>

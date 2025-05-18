@@ -25,7 +25,7 @@ export const instagram = ''
 export const resume = '';
 export const navMenu = [
      {
-          title: 'Links',
+          title: 'Resources',
           link: 'https://list.angs.dev/'
      }, 
 
