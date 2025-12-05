@@ -9,7 +9,7 @@
       companyName: "Foundation building material",
       date: "2025-current",  
       details: [
-        { category: "Tools & Platforms", content: "Entra, Intune, Crowdstrike, ArcticWolf, GraphAPI, Automox"},
+        { category: "Tools & Platforms", content: "Azure, Entra, Intune, GraphAPI, Crowdstrike, Qualys, Tanium"},
         { category: "Languages", content: "Python, Powershell" },
       ]
     },
