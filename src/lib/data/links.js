@@ -57,9 +57,9 @@ tag: "Reading"
 },
 {
 title: "IBM Networking Guide",
-link: "https://www.ibm.com/cloud/learn/networking-a-complete-guide",
-description: "High-level overview of networking fundamentals.",
-tag: "Reading"
+link: "https://www.ibm.com/think/topics/networking",
+description: "High level overview of networking fundamentals.",
+tag: "Networking"
 },
 {
 title: "Real World Bug Hunting",
