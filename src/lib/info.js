@@ -24,8 +24,6 @@ export const twitter = ''
 export const instagram = ''
 export const resume = '';
 export const navMenu = [
-     {
-   
-     }, 
-
+  { title: "Cool Links", link: "/links" },
+  { title: "Music Journal", link: "/music" }
 ]
