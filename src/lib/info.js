@@ -12,7 +12,7 @@ export const name = `${firstName} ${lastName}`
 // Used for the landing page & footer of posts
 
 export const bio_img = 'bio.png'
-export const bio = "I'm Angel, a sysadmin who enjoys writing software, automating IT processes, and security. I'm a CSUF alum with a Bachelor of Science in Computer Science, and I'm currently in graduate school at CPP for a Master of Science in Information Security. Outside of work and school, I like to lift weights, see live music, play video games, learn about cars, and try new foods. My favorite game is the Elder Scrolls series, and my favorite food is sushi."
+export const bio = "I'm Angel, a Systems Engineer who enjoys writing software, automating IT processes, and security. I'm a CSUF alum with a Bachelor of Science in Computer Science, and I'm currently in graduate school at CPP for a Master of Science in Information Security. Outside of work and school, I like to lift weights, do some Muay Thai, see live music, play video games, learn about cars, and try new foods. My favorite game series is the Elder Scrolls, and my favorite food is sushi."
 
 
 export const github = 'https://github.com/anguzz'
@@ -25,8 +25,7 @@ export const instagram = ''
 export const resume = '';
 export const navMenu = [
      {
-          title: 'Resources',
-          link: 'https://list.angs.dev/'
+   
      }, 
 
 ]

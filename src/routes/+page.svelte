@@ -4,13 +4,21 @@
   import Bio from '$lib/components/Bio.svelte';
 
   let skills = [
+      {
+      title: "Systems Engineer",
+      companyName: "SchoolsFirst Federal Credit Union",
+      date: "Current",  
+      details: [
+        { category: "Tools & Platforms", content: "Azure/365"},
+      ]
+    },
     {
-      title: "System Administrator",
-      companyName: "Foundation building material",
-      date: "2025-current",  
+      title: "Systems Administrator",
+      companyName: "Foundation Building Materials",
+      date: "Jan 2025 - March 2026",  
       details: [
         { category: "Tools & Platforms", content: "Azure, Entra, Intune, GraphAPI, Crowdstrike, Qualys, Tanium"},
-        { category: "Languages", content: "Python, Powershell" },
+        { category: "Development", content: "Python, Powershell" },
       ]
     },
     {
@@ -19,7 +27,7 @@
       date: "2023-2025",  
       details: [
         { category: "Tools & Platforms", content: "Active directory, Windows Server, Entra, Cisco Duo, MS SQL, Sophos, RDP, VNC, Wireshark, Intune" },
-        { category: "Languages", content: "Python, Powershell, SQL, Javascript" },
+        { category: "Development", content: "Python, Powershell, SQL, Javascript" },
       ]
     },
     {
@@ -28,7 +36,7 @@
       date: "Summer 2022 - Intern",
       details: [
         { category: "Tools & Platforms", content: "Oracle 19c, SSH, Linux" },
-        { category: "Languages", content: "SQL, Bash" },
+        { category: "Development", content: "SQL, Bash" },
       ]
     },
     {
@@ -36,8 +44,8 @@
       companyName: "db&m Media, Inc.",
       date: "2021",  
       details: [
-        { category: "Framework", content: "Wordpress, Excel" },
-        { category: "Languages", content: "HTML, CSS, JS, PHP" },
+        { category: "Tools & Platforms", content: "Wordpress, Excel" },
+        { category: "Development", content: "HTML, CSS, JS, PHP" },
       ]
     },
   ];

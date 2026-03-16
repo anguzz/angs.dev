@@ -36,10 +36,10 @@ import MoonIcon from '$lib/components/icons/MoonIcon.svelte';
          
           {/each}
           <li>
-            <a href="https://list.angs.dev/" class="inline-block px-4 py-2 border-2 text-sm rounded-full border-blue-500  font-medium text-zinc-900 dark:text-zinc-50 hover:bg-indigo-800 hover:text-white focus:relative">Resources</a>
+            <a href="/links" class="inline-block px-4 py-2 border-2 text-sm rounded-full border-blue-500  font-medium text-zinc-900 dark:text-zinc-50 hover:bg-indigo-800 hover:text-white focus:relative">Cool Links</a>
           </li>
           <li>
-            <a href="https://music.angs.dev/" class="inline-block px-4 py-2 border-2 text-sm rounded-full border-blue-500  font-medium text-zinc-900 dark:text-zinc-50 hover:bg-indigo-800 hover:text-white focus:relative">Music Journal</a>
+            <a href="/music" class="inline-block px-4 py-2 border-2 text-sm rounded-full border-blue-500  font-medium text-zinc-900 dark:text-zinc-50 hover:bg-indigo-800 hover:text-white focus:relative">Music Journal</a>
           </li>
         </ul>
       </nav>
