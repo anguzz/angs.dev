@@ -182,7 +182,6 @@ link: "https://www.minuteinbox.com/",
 description: "Temporary email service useful for testing sign-ups.",
 tag: "Tools"
 },
-
 {
 title: "SubnetIPv4 Calculator",
 link: "https://subnetipv4.com/",
@@ -340,5 +339,17 @@ title: "AllDatasheet",
 link: "https://www.alldatasheet.com/",
 description: "Large searchable database of electronic component datasheets for ICs, transistors, sensors, and other hardware parts.",
 tag: "Tools"
+},
+{
+title: "Azure Region to Region Latency",
+link: "https://www.azurespeed.com/Azure/RegionToRegionLatency",
+description: "Round-trip latency measures the time for a data packet to travel from one Azure region to another and back.",
+tag: "Networking"
+},
+{
+title: "JS Paint",
+link: "https://jspaint.app/",
+description: "A web based MS Paint remake",
+tag: "Fun"
 }
 ];
