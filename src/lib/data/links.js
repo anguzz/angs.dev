@@ -103,7 +103,18 @@ link: "https://start.me/p/L1rEYQ/osint4all",
 description: "Large curated OSINT resource collection for investigations and research.",
 tag: "Security"
 },
-
+{
+title: "MSPortals.io - Microsoft Portals",
+link: "https://msportals.io",
+description: "A comprehensive directory of all Microsoft portals in one place",
+tag: "Fun"
+},
+{
+title: "Hiren’s BootCD PE",
+link: "https://www.hirensbootcd.org/",
+description: "Multipurpose live boot USB toolkit.",
+tag: "Tools"
+},
 {
 title: "Ventoy",
 link: "https://sourceforge.net/projects/ventoy/",
@@ -144,12 +155,6 @@ tag: "Tools"
 title: "Kon Boot",
 link: "https://kon-boot.com/",
 description: "Bypass Windows and macOS login passwords.",
-tag: "Tools"
-},
-{
-title: "Hiren’s BootCD PE",
-link: "https://www.hirensbootcd.org/",
-description: "Multipurpose live boot USB toolkit.",
 tag: "Tools"
 },
 {
