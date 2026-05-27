@@ -356,5 +356,11 @@ title: "JS Paint",
 link: "https://jspaint.app/",
 description: "A web based MS Paint remake",
 tag: "Fun"
+},
+{
+title: "Wario Style",
+link: "https://www.wario.style/",
+description: " Wario.Style. Game Boy Midi Synthesis Engine. Search any song. Get the 8-bit Game Boy version. ",
+tag: "Fun"
 }
 ];
