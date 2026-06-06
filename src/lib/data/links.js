@@ -362,5 +362,83 @@ title: "Wario Style",
 link: "https://www.wario.style/",
 description: " Wario.Style. Game Boy Midi Synthesis Engine. Search any song. Get the 8-bit Game Boy version. ",
 tag: "Fun"
-}
+},
+{
+title: "Portable apps Browsers",
+link: "https://portableapps.com/apps/internet",
+description: " PortableApps.com lets you download portable versions of popular apps that run from a USB drive, cloud folder, or local folder without a full install.",
+tag: "Tools"
+},
+{
+title: "Mx Toolbox",
+link: "https://mxtoolbox.com/",
+description: " This test will list MX records for a domain in priority order. The MX lookup is done directly against the domain's authoritative name server, so changes to MX Records should show up instantly. You can click Diagnostics , which will connect to the mail server, verify reverse DNS records, perform a simple Open Relay check and measure response time performance. You may also check each MX record (IP Address) against 105 DNS based blacklists . (Commonly called RBLs, DNSBLs) ",
+tag: "Tools"
+},
+{
+title: "DeFLock",
+link: "https://deflock.org/",
+description: "DeFlock is an open-source project that maps license plate readers across the US.",
+tag: "Fun"
+},
+{
+title: "SAML tracer",
+link: "https://chromewebstore.google.com/detail/saml-tracer/mpdajninpobndbfcldcmbpnnbhibjmch?pli=1",
+description: " A debugger for viewing SAML messages",
+tag: "Tools"
+},
+{
+title: "Patriot Sentinel Cost estimator",
+link: "https://sentinelestimator.com/",
+description: "Estimate Microsoft Sentinel monthly and annual costs across Pay-as-you-go, Data Lake, Commitment, and PPP pricing options.",
+tag: "Tools"
+},
+{
+title: "DLP Test",
+link: "https://dlptest.com/",
+description: "Data Loss Prevention Testing Resource",
+tag: "Tools"
+},
+{
+title: "Falcon Docs",
+link: "https://library.humio.com/",
+description: "Falcon LogScale Documentation",
+tag: "Reading"
+},
+{
+title: "FalconPy",
+link: "https://falconpy.io/",
+description: "Crowdstrike Falcon Python Wiki",
+tag: "Reading"
+},
+{
+title: "Microsoft NAT support",
+link: "https://learn.microsoft.com/en-us/microsoft-365/enterprise/nat-support-with-microsoft-365?view=o365-worldwide",
+description: "Microsoft guidance explaining how NAT works with Microsoft 365 and how to avoid connection limits or port exhaustion in large networks.",
+tag: "Reading"
+},
+{
+title: "SysAdmin Day",
+link: "https://sysadminday.com",
+description: "Sysadmin appreciation day website",
+tag: "Fun"
+},
+{
+title: "Refusal in LLMs is mediated by a single direction",
+link: "https://www.lesswrong.com/posts/jGuXSZgv6qfdhMCuJ/refusal-in-llms-is-mediated-by-a-single-direction",
+description: "Research on how LLMs learn and trigger refusal behavior.",
+tag: "Reading"
+},
+{
+title: "Ollama download",
+link: "https://ollama.com/download",
+description: "Download Ollama to run local AI models on Windows, macOS, or Linux.",
+tag: "Tools"
+},
+{
+title: "Ollama abliterated model search query",
+link: "https://ollama.com/search?q=abliterated+",
+description: "Search Ollama for abliterated models with reduced refusal behavior.",
+tag: "Tools"
+},
 ];
