@@ -134,6 +134,12 @@ description: "Run portable software directly from a USB drive.",
 tag: "Tools"
 },
 {
+title: "Portable apps Browsers",
+link: "https://portableapps.com/apps/internet",
+description: "List of alternative browsers and downloads",
+tag: "Tools"
+},
+{
 title: "Master Packager",
 link: "https://www.masterpackager.com/",
 description: "Free packaging application to repackage MSI installers.",
@@ -362,12 +368,6 @@ title: "Wario Style",
 link: "https://www.wario.style/",
 description: " Wario.Style. Game Boy Midi Synthesis Engine. Search any song. Get the 8-bit Game Boy version. ",
 tag: "Fun"
-},
-{
-title: "Portable apps Browsers",
-link: "https://portableapps.com/apps/internet",
-description: " PortableApps.com lets you download portable versions of popular apps that run from a USB drive, cloud folder, or local folder without a full install.",
-tag: "Tools"
 },
 {
 title: "Mx Toolbox",
