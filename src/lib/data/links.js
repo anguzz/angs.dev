@@ -441,4 +441,10 @@ link: "https://ollama.com/search?q=abliterated+",
 description: "Search Ollama for abliterated models with reduced refusal behavior.",
 tag: "Tools"
 },
+{
+title: "Promox community scripts",
+link: "https://community-scripts.org/scripts",
+description: "Tools and scripts to manage Proxmox VE and virtualization platforms effectively.",
+tag: "Tools"
+},
 ];
