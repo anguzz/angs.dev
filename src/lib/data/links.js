@@ -447,4 +447,65 @@ link: "https://community-scripts.org/scripts",
 description: "Tools and scripts to manage Proxmox VE and virtualization platforms effectively.",
 tag: "Tools"
 },
+{
+title: "Reticulum",
+link: "https://reticulum.network/",
+description: "Cryptographic networking stack that runs over anything carrying bits, LoRa, packet radio, serial, or TCP/IP, using public key identities instead of addresses.",
+tag: "Networking"
+},
+{
+title: "Meshtastic",
+link: "https://meshtastic.org/",
+description: "Open source LoRa mesh firmware and phone app for off-grid text communication between cheap radio boards.",
+tag: "Networking"
+},
+{
+title: "bgp.tools",
+link: "https://bgp.tools/",
+description: "Live BGP looking glass for inspecting ASNs, prefixes, and how routes propagate across the internet.",
+tag: "Networking"
+},
+{
+title: "Tailscale",
+link: "https://tailscale.com/",
+description: "WireGuard based mesh VPN for reaching self hosted services remotely without forwarding ports or exposing a public IP.",
+tag: "Networking"
+},
+{
+title: "PingMyNetwork",
+link: "https://pingmynetwork.com/",
+description: "Gamified browse -based practice for Cisco CCNA and CCNP topics using real CLI commands instead of video lectures.",
+tag: "Networking"
+},
+{
+title: "Whonix Documentation",
+link: "https://www.whonix.org/wiki/Documentation",
+description: "One of the most thorough privacy engineering wikis available, covering Tor isolation, VM design, and threat models regardless of whether you run Whonix itself.",
+tag: "Reading"
+},
+{
+title: "Privacy Guides: Threat Modeling",
+link: "https://www.privacyguides.org/en/basics/threat-modeling/",
+description: "Framework for building a personal threat model by identifying what you are protecting, who wants it, how likely they are to try, and how much inconvenience the defense is worth.",
+tag: "Security"
+},
+{
+title: "Cover Your Tracks",
+link: "https://coveryourtracks.eff.org/",
+description: "EFF tool that scores how unique and trackable your browser fingerprint is against a live sample of other visitors.",
+tag: "Security"
+},
+{
+title: "BrowserLeaks",
+link: "https://browserleaks.com/",
+description: "Suite of tools that offers a range of tests to evaluate the security and privacy of your web browser. These tests focus on identifying ways in which websites may leak your real IP address, collect information about your device, and perform browser fingerprinting.",
+tag: "Security"
+},
+{
+title: "MalwareBazaar",
+link: "https://bazaar.abuse.ch/",
+description: "abuse.ch repository of malware samples and IOCs for research and detection engineering.",
+tag: "Security"
+},
 ];
+
