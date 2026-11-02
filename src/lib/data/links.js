@@ -507,5 +507,58 @@ link: "https://bazaar.abuse.ch/",
 description: "abuse.ch repository of malware samples and IOCs for research and detection engineering.",
 tag: "Security"
 },
+{
+title: "Youtuber: Mental Outlaw",
+link: "https://www.youtube.com/@MentalOutlaw",
+description: "Good youtuber to keep up with cyber news.",
+tag: "Youtube"
+},
+{
+title: "Youtuber: dzuma",
+link: "https://www.youtube.com/@dzumq",
+description: "Good and funny videos on topics like opsec, Linux, OSINT, networking, and surveillance. Has pretty good takes.",
+tag: "Youtube"
+},
+{
+title: "Youtuber: Fireship",
+link: "https://www.youtube.com/@Fireship",
+description: "Enjoy watching his videos to keep up with dev news, AI news, etc.",
+tag: "Youtube"
+},
+{
+title: "Youtuber: Low Level",
+link: "https://www.youtube.com/@LowLevelTV",
+description: "Good for keeping up with the latest on reversing, recent CVEs, and malware.",
+tag: "Youtube"
+},
+{
+title: "AbuseIPDB",
+link: "https://www.abuseipdb.com/",
+description: "Community database for checking and reporting abusive IP addresses.",
+tag: "Security"
+},
+{
+title: "OneLogin SAML Online Tools",
+link: "https://developers.onelogin.com/docs/saml/online-tools/",
+description: "Online tools for decoding, inspecting, and testing SAML messages and certificates.",
+tag: "Tools"
+},
+{
+title: "Azure Resource Naming Best Practices",
+link: "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming",
+description: "Microsoft Cloud Adoption Framework guidance on naming conventions for Azure resources.",
+tag: "Reading"
+},
+{
+title: "SAML 2.0 Technical Overview",
+link: "https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html",
+description: "OASIS technical overview of the SAML 2.0 specification, flows, and profiles.",
+tag: "Reading"
+},
+{
+title: "Microsoft Graph Permissions Explorer",
+link: "https://graphpermissions.merill.net/permission/",
+description: "Searchable reference of Microsoft Graph permissions and what each one grants.",
+tag: "Tools"
+}
 ];
-
