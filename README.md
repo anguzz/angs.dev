@@ -1,6 +1,6 @@
 # angs.dev
 
-My personal site. Plain HTML, CSS and a little JavaScript. No framework, no build step, no dependencies.
+My personal site, built with plain HTML, CSS and a little JavaScript. It used to run on Svelte, but I'm too lazy to manage dependencies and frameworks, so now there's no framework, no build step and no dependencies.
 
 ## Files
 
@@ -29,7 +29,3 @@ npx serve .        # or just double-click index.html (all paths are relative)
 # or: python3 -m http.server
 ```
 
-## Deploy
-
-Vercel: set Framework Preset to **Other**, with no build command and the output directory set to the repo root. `vercel.json` handles clean URLs.
-GitHub Pages / Netlify / Cloudflare Pages also work as-is; all of them serve `links.html` at `/links`.
