@@ -1,39 +1,35 @@
 # angs.dev
 
-My personal site/portfolio
+My personal site. Plain HTML, CSS and a little JavaScript. No framework, no build step, no dependencies.
 
-## Stack
-
-- SvelteKit
-- Svelte 4
-- Vite 5
-- Tailwind CSS
-
-
-## Project Structure
+## Files
 
 ```text
-src/
-  lib/
-    components/     Shared UI like navigation, footer, and bio
-    data/           Content collections for links, music, and posts
-    info.js         Site metadata, bio text, and social links
-  routes/
-    +page.svelte    Homepage
-    links/          Cool Links page
-    music/          Music Journal page
-static/
-  bio.png
-  favicon.ico
-  favicon.png
+index.html    Home: bio, socials, experience
+links.html    Cool Links (tag filter + search)
+music.html    Music Journal (search)
+style.css     All styles, light/dark via CSS variables
+main.js       Theme toggle, list search/filter, footer year
+vercel.json   Clean URLs (/links -> links.html)
+bio.png, favicon.*
 ```
 
-## Content Editing
+## Editing
 
-Most site content is stored in simple JavaScript files:
+- **Bio / socials / experience:** edit `index.html` directly.
+- **Add a link:** copy an `<li>` in `links.html`. The `data-tag` attribute decides which filter button it shows under; new tags get a button automatically.
+- **Add a concert:** copy an `<li>` in `music.html`.
 
-- Update personal info, bio, and social links in `src/lib/info.js`
-- Edit homepage experience cards in `src/routes/+page.svelte`
-- Manage bookmarks in `src/lib/data/links.js`
-- Manage concert notes in `src/lib/data/music.js`
+Filters are shareable: `/links?tag=Security`, `/links?q=usb`.
 
+## Run locally
+
+```sh
+npx serve .        # or just double-click index.html (all paths are relative)
+# or: python3 -m http.server
+```
+
+## Deploy
+
+Vercel: set Framework Preset to **Other**, with no build command and the output directory set to the repo root. `vercel.json` handles clean URLs.
+GitHub Pages / Netlify / Cloudflare Pages also work as-is; all of them serve `links.html` at `/links`.

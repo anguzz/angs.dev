@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cool Links · Angel Santoyo</title>
+  <meta name="description" content="Internet stuff I’ve found useful or interesting.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Set theme before first paint: saved choice, else OS preference.
+    try {
+      var t = localStorage.getItem('theme');
+      document.documentElement.dataset.theme = t || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch (e) {}
+  </script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="index.html">Angel Santoyo</a>
+    <nav aria-label="Main">
+      <a href="links.html" aria-current="page">Cool Links</a>
+      <a href="music.html">Music Journal</a>
+      <button class="theme-btn" type="button" aria-label="Toggle dark mode">
+        <svg class="moon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
+        <svg class="sun" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <h1 class="page-title">Cool Links</h1>
+    <p class="subtitle">Internet stuff I’ve found useful or interesting.</p>
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search links…" aria-label="Search links">
+      <span id="count" class="count" aria-live="polite"></span>
+    </div>
+    <div id="tags" class="tags"></div>
+    <!-- To add a link: copy an <li> below. data-tag sets its filter button. -->
+    <ul id="links" class="cards" data-filter>
+      <li data-tag="Dev">
+        <h3><a href="https://neetcode.io/practice" target="_blank" rel="noopener noreferrer">NeetCode</a></h3>
+        <p>Excellent starting point for learning data structures and algorithms with clear walkthrough videos.</p>
+        <span class="tag">Dev</span>
+      </li>
+      <li data-tag="Dev">
+        <h3><a href="https://svelte.dev/examples/hello-world" target="_blank" rel="noopener noreferrer">Svelte REPL tutorials</a></h3>
+        <p>Interactive Svelte examples you can edit and run directly in the browser.</p>
+        <span class="tag">Dev</span>
+      </li>
+      <li data-tag="Dev">
+        <h3><a href="https://js13kgames.github.io/resources/" target="_blank" rel="noopener noreferrer">JS13k Games Resources</a></h3>
+        <p>Guides and tools for building ultra-small JavaScript games.</p>
+        <span class="tag">Dev</span>
+      </li>
+      <li data-tag="Dev">
+        <h3><a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">Codepen</a></h3>
+        <p>Browser-based environment for prototyping front-end code.</p>
+        <span class="tag">Dev</span>
+      </li>
+      <li data-tag="Dev">
+        <h3><a href="https://hypercolor.dev/" target="_blank" rel="noopener noreferrer">Hypercolor</a></h3>
+        <p>Collection of gradients designed for Tailwind CSS.</p>
+        <span class="tag">Dev</span>
+      </li>
+      <li data-tag="Dev">
+        <h3><a href="https://coolors.co/" target="_blank" rel="noopener noreferrer">Coolors Palette Generator</a></h3>
+        <p>Generate clean color palettes quickly.</p>
+        <span class="tag">Dev</span>
+      </li>
+      <li data-tag="Dev">
+        <h3><a href="https://github.com/EthanThatOneKid/acmcsuf.com/wiki/Links" target="_blank" rel="noopener noreferrer">ACM CSUF Wiki</a></h3>
+        <p>Curated programming resources from the ACM CSUF community.</p>
+        <span class="tag">Dev</span>
+      </li>
+      <li data-tag="Dev">
+        <h3><a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a></h3>
+        <p>Platform for deploying front-end web applications easily.</p>
+        <span class="tag">Dev</span>
+      </li>
+      <li data-tag="Reading">
+        <h3><a href="https://github.com/vasanthk/how-web-works" target="_blank" rel="noopener noreferrer">How the Web Works</a></h3>
+        <p>Detailed explanation of what happens when you type a URL into your browser.</p>
+        <span class="tag">Reading</span>
+      </li>
+      <li data-tag="Networking">
+        <h3><a href="https://www.ibm.com/think/topics/networking" target="_blank" rel="noopener noreferrer">IBM Networking Guide</a></h3>
+        <p>High level overview of networking fundamentals.</p>
+        <span class="tag">Networking</span>
+      </li>
+      <li data-tag="Security">
+        <h3><a href="https://digtvbg.com/files/books-for-hacking/Real-World%20Bug%20Hunting%20-%20A%20Field%20Guide%20to%20Web%20Hacking%20by%20Peter%20Yaworski.pdf" target="_blank" rel="noopener noreferrer">Real World Bug Hunting</a></h3>
+        <p>Case studies and techniques used in real bug bounty discoveries.</p>
+        <span class="tag">Security</span>
+      </li>
+      <li data-tag="Security">
+        <h3><a href="https://portswigger.net/web-security/all-labs" target="_blank" rel="noopener noreferrer">PortSwigger Web Security Labs</a></h3>
+        <p>Hands-on labs for learning web vulnerabilities and exploitation techniques.</p>
+        <span class="tag">Security</span>
+      </li>
+      <li data-tag="Security">
+        <h3><a href="https://github.com/swisskyrepo/PayloadsAllTheThings" target="_blank" rel="noopener noreferrer">PayloadsAllTheThings</a></h3>
+        <p>Huge reference list of exploitation payloads used in CTFs and testing.</p>
+        <span class="tag">Security</span>
+      </li>
+      <li data-tag="Security">
+        <h3><a href="https://gchq.github.io/CyberChef/" target="_blank" rel="noopener noreferrer">CyberChef</a></h3>
+        <p>Browser tool for encoding, encryption, decoding, and data analysis.</p>
+        <span class="tag">Security</span>
+      </li>
+      <li data-tag="Security">
+        <h3><a href="https://www.virustotal.com/gui/home/upload" target="_blank" rel="noopener noreferrer">VirusTotal</a></h3>
+        <p>Analyze suspicious files, domains, IPs, and URLs to detect malware.</p>
+        <span class="tag">Security</span>
+      </li>
+      <li data-tag="Security">
+        <h3><a href="https://canarytokens.org/" target="_blank" rel="noopener noreferrer">Canarytokens</a></h3>
+        <p>Create tripwire tokens that alert you when they are accessed.</p>
+        <span class="tag">Security</span>
+      </li>
+      <li data-tag="Security">
+        <h3><a href="https://start.me/p/L1rEYQ/osint4all" target="_blank" rel="noopener noreferrer">OSINT4All</a></h3>
+        <p>Large curated OSINT resource collection for investigations and research.</p>
+        <span class="tag">Security</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://msportals.io" target="_blank" rel="noopener noreferrer">MSPortals.io - Microsoft Portals</a></h3>
+        <p>A comprehensive directory of all Microsoft portals in one place</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://www.hirensbootcd.org/" target="_blank" rel="noopener noreferrer">Hiren’s BootCD PE</a></h3>
+        <p>Multipurpose live boot USB toolkit.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://sourceforge.net/projects/ventoy/" target="_blank" rel="noopener noreferrer">Ventoy</a></h3>
+        <p>Boot multiple ISO images from a single USB drive.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://clonezilla.org/" target="_blank" rel="noopener noreferrer">Clonezilla</a></h3>
+        <p>Disk cloning and imaging tool used for system deployment and backup.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://portableapps.com/" target="_blank" rel="noopener noreferrer">PortableApps</a></h3>
+        <p>Run portable software directly from a USB drive.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://portableapps.com/apps/internet" target="_blank" rel="noopener noreferrer">Portable apps Browsers</a></h3>
+        <p>List of alternative browsers and downloads</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://www.masterpackager.com/" target="_blank" rel="noopener noreferrer">Master Packager</a></h3>
+        <p>Free packaging application to repackage MSI installers.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://learn.microsoft.com/en-us/windows/win32/msi/orca-exe" target="_blank" rel="noopener noreferrer">Orca MSI Editor</a></h3>
+        <p>Database table editor for Windows Installer packages.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://www.revouninstaller.com/" target="_blank" rel="noopener noreferrer">Revo Uninstaller</a></h3>
+        <p>Advanced uninstall tool that removes leftover files and registry entries.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://kon-boot.com/" target="_blank" rel="noopener noreferrer">Kon Boot</a></h3>
+        <p>Bypass Windows and macOS login passwords.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://medicatusb.com/" target="_blank" rel="noopener noreferrer">Medicat USB</a></h3>
+        <p>Large bootable toolkit similar to Hiren's with additional tools.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://www.supergrubdisk.org/super-grub2-disk/" target="_blank" rel="noopener noreferrer">SuperGrub2</a></h3>
+        <p>Boot recovery disk for accessing operating systems.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://httpie.io/app" target="_blank" rel="noopener noreferrer">HTTPie</a></h3>
+        <p>Simple browser interface for testing APIs.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://explainshell.com/" target="_blank" rel="noopener noreferrer">Explainshell</a></h3>
+        <p>Breaks down Linux commands and explains each argument.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://www.minuteinbox.com/" target="_blank" rel="noopener noreferrer">MinuteInbox</a></h3>
+        <p>Temporary email service useful for testing sign-ups.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Networking">
+        <h3><a href="https://subnetipv4.com/" target="_blank" rel="noopener noreferrer">SubnetIPv4 Calculator</a></h3>
+        <p>Interactive IPv4 subnet calculator and networking reference.</p>
+        <span class="tag">Networking</span>
+      </li>
+      <li data-tag="Reading">
+        <h3><a href="https://roadmap.sh/devops" target="_blank" rel="noopener noreferrer">DevOps Roadmap</a></h3>
+        <p>Interactive roadmap outlining skills and technologies for DevOps engineers.</p>
+        <span class="tag">Reading</span>
+      </li>
+      <li data-tag="Reading">
+        <h3><a href="https://www.garykessler.net/library/crypto.html" target="_blank" rel="noopener noreferrer">Overview of Cryptography</a></h3>
+        <p>Reference material covering cryptography concepts and algorithms.</p>
+        <span class="tag">Reading</span>
+      </li>
+      <li data-tag="Reading">
+        <h3><a href="https://users.ece.cmu.edu/~gamvrosi/thelastq.html" target="_blank" rel="noopener noreferrer">The Last Question</a></h3>
+        <p>Classic Isaac Asimov short story about entropy and the future of the universe.</p>
+        <span class="tag">Reading</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://ezgif.com" target="_blank" rel="noopener noreferrer">EzGif</a></h3>
+        <p>Simple online GIF and image editing tools.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://ascii.today/" target="_blank" rel="noopener noreferrer">ASCII.Today</a></h3>
+        <p>Generate ASCII art directly in the browser.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://convert2ascii.com/" target="_blank" rel="noopener noreferrer">Convert2ASCII</a></h3>
+        <p>Convert images and text into ASCII art.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://manytools.org/hacker-tools/ascii-banner/" target="_blank" rel="noopener noreferrer">ASCII Banner Generator</a></h3>
+        <p>Create ASCII banners for terminal tools or scripts.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://indieweb.org/" target="_blank" rel="noopener noreferrer">IndieWeb</a></h3>
+        <p>Movement encouraging independent personal websites outside corporate platforms.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://neocities.org/" target="_blank" rel="noopener noreferrer">Neocities</a></h3>
+        <p>Platform for creating and hosting personal websites.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://www.windows93.net/" target="_blank" rel="noopener noreferrer">Windows93</a></h3>
+        <p>A parody retro operating system running entirely in the browser.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://myretrotvs.com/" target="_blank" rel="noopener noreferrer">MyRetroTVs</a></h3>
+        <p>Simulated nostalgic TV channels from past decades.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="http://www.therestartpage.com/" target="_blank" rel="noopener noreferrer">The Restart Page</a></h3>
+        <p>Interactive simulation of reboot screens from vintage operating systems.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://cloudhiker.net/" target="_blank" rel="noopener noreferrer">Cloudhiker</a></h3>
+        <p>Collection of interesting and unusual websites across the internet.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://512kb.club/" target="_blank" rel="noopener noreferrer">512KB Club</a></h3>
+        <p>Showcase of extremely lightweight websites under 512KB.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://lostgamer.io/" target="_blank" rel="noopener noreferrer">Lostgamer</a></h3>
+        <p>GeoGuessr-style geography guessing game.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://play-cs.com/en/servers" target="_blank" rel="noopener noreferrer">Play-CS</a></h3>
+        <p>Play Counter-Strike directly in the browser.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://eaglercraft.com/" target="_blank" rel="noopener noreferrer">Eaglercraft</a></h3>
+        <p>Browser-based Minecraft-style experience.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://www.romsgames.net/" target="_blank" rel="noopener noreferrer">ROMs Games</a></h3>
+        <p>Collection of retro game ROMs for emulation.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://www.lacartoons.com/" target="_blank" rel="noopener noreferrer">LACartoons</a></h3>
+        <p>Watch classic animated shows from past decades.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Security">
+        <h3><a href="https://community.penthertz.com/t/airsnitch-breaking-wi-fi-client-isolation-technique-index-tool-usage-defenses/21" target="_blank" rel="noopener noreferrer">AirSnitch Wi-Fi Client Isolation Research</a></h3>
+        <p>Research article explaining techniques for breaking Wi-Fi client isolation and possible defenses.</p>
+        <span class="tag">Security</span>
+      </li>
+      <li data-tag="Networking">
+        <h3><a href="https://documentation.meraki.com/Wireless/Design_and_Configure/Architecture_and_Best_Practices/802.11_Association_Process_Explained" target="_blank" rel="noopener noreferrer">802.11 Association Process Explained</a></h3>
+        <p>Cisco Meraki documentation explaining the Wi-Fi association process in detail.</p>
+        <span class="tag">Networking</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://lingojam.com/ZalgoText" target="_blank" rel="noopener noreferrer">Zalgo Text Generator</a></h3>
+        <p>Generate chaotic 'Zalgo' glitch text effects.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Reading">
+        <h3><a href="https://en.wikipedia.org/wiki/Bullshit_Jobs" target="_blank" rel="noopener noreferrer">Wiki: Bullshit Jobs: A Theory</a></h3>
+        <p>Book by anthropologist David Graeber arguing many modern jobs are socially pointless and exist mainly to sustain bureaucratic systems rather than produce real value.</p>
+        <span class="tag">Reading</span>
+      </li>
+      <li data-tag="Reading">
+        <h3><a href="https://kuber.studio/blog/Projects/How-I-Managed-To-Get-Doom-In-A-QR-Code" target="_blank" rel="noopener noreferrer">Doom in a QR Code</a></h3>
+        <p>Write up explaining how a Doom like game was compressed and encoded entirely inside a single QR code using extreme code size optimization.</p>
+        <span class="tag">Reading</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://www.alldatasheet.com/" target="_blank" rel="noopener noreferrer">AllDatasheet</a></h3>
+        <p>Large searchable database of electronic component datasheets for ICs, transistors, sensors, and other hardware parts.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Networking">
+        <h3><a href="https://www.azurespeed.com/Azure/RegionToRegionLatency" target="_blank" rel="noopener noreferrer">Azure Region to Region Latency</a></h3>
+        <p>Round-trip latency measures the time for a data packet to travel from one Azure region to another and back.</p>
+        <span class="tag">Networking</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://jspaint.app/" target="_blank" rel="noopener noreferrer">JS Paint</a></h3>
+        <p>A web based MS Paint remake</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://www.wario.style/" target="_blank" rel="noopener noreferrer">Wario Style</a></h3>
+        <p>Wario.Style. Game Boy Midi Synthesis Engine. Search any song. Get the 8-bit Game Boy version.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://mxtoolbox.com/" target="_blank" rel="noopener noreferrer">Mx Toolbox</a></h3>
+        <p>This test will list MX records for a domain in priority order. The MX lookup is done directly against the domain's authoritative name server, so changes to MX Records should show up instantly. You can click Diagnostics , which will connect to the mail server, verify reverse DNS records, perform a simple Open Relay check and measure response time performance. You may also check each MX record (IP Address) against 105 DNS based blacklists . (Commonly called RBLs, DNSBLs)</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://deflock.org/" target="_blank" rel="noopener noreferrer">DeFLock</a></h3>
+        <p>DeFlock is an open-source project that maps license plate readers across the US.</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://chromewebstore.google.com/detail/saml-tracer/mpdajninpobndbfcldcmbpnnbhibjmch?pli=1" target="_blank" rel="noopener noreferrer">SAML tracer</a></h3>
+        <p>A debugger for viewing SAML messages</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://sentinelestimator.com/" target="_blank" rel="noopener noreferrer">Patriot Sentinel Cost estimator</a></h3>
+        <p>Estimate Microsoft Sentinel monthly and annual costs across Pay-as-you-go, Data Lake, Commitment, and PPP pricing options.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://dlptest.com/" target="_blank" rel="noopener noreferrer">DLP Test</a></h3>
+        <p>Data Loss Prevention Testing Resource</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Reading">
+        <h3><a href="https://library.humio.com/" target="_blank" rel="noopener noreferrer">Falcon Docs</a></h3>
+        <p>Falcon LogScale Documentation</p>
+        <span class="tag">Reading</span>
+      </li>
+      <li data-tag="Reading">
+        <h3><a href="https://falconpy.io/" target="_blank" rel="noopener noreferrer">FalconPy</a></h3>
+        <p>Crowdstrike Falcon Python Wiki</p>
+        <span class="tag">Reading</span>
+      </li>
+      <li data-tag="Reading">
+        <h3><a href="https://learn.microsoft.com/en-us/microsoft-365/enterprise/nat-support-with-microsoft-365?view=o365-worldwide" target="_blank" rel="noopener noreferrer">Microsoft NAT support</a></h3>
+        <p>Microsoft guidance explaining how NAT works with Microsoft 365 and how to avoid connection limits or port exhaustion in large networks.</p>
+        <span class="tag">Reading</span>
+      </li>
+      <li data-tag="Fun">
+        <h3><a href="https://sysadminday.com" target="_blank" rel="noopener noreferrer">SysAdmin Day</a></h3>
+        <p>Sysadmin appreciation day website</p>
+        <span class="tag">Fun</span>
+      </li>
+      <li data-tag="Reading">
+        <h3><a href="https://www.lesswrong.com/posts/jGuXSZgv6qfdhMCuJ/refusal-in-llms-is-mediated-by-a-single-direction" target="_blank" rel="noopener noreferrer">Refusal in LLMs is mediated by a single direction</a></h3>
+        <p>Research on how LLMs learn and trigger refusal behavior.</p>
+        <span class="tag">Reading</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://ollama.com/download" target="_blank" rel="noopener noreferrer">Ollama download</a></h3>
+        <p>Download Ollama to run local AI models on Windows, macOS, or Linux.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://ollama.com/search?q=abliterated+" target="_blank" rel="noopener noreferrer">Ollama abliterated model search query</a></h3>
+        <p>Search Ollama for abliterated models with reduced refusal behavior.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://community-scripts.org/scripts" target="_blank" rel="noopener noreferrer">Promox community scripts</a></h3>
+        <p>Tools and scripts to manage Proxmox VE and virtualization platforms effectively.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Networking">
+        <h3><a href="https://reticulum.network/" target="_blank" rel="noopener noreferrer">Reticulum</a></h3>
+        <p>Cryptographic networking stack that runs over anything carrying bits, LoRa, packet radio, serial, or TCP/IP, using public key identities instead of addresses.</p>
+        <span class="tag">Networking</span>
+      </li>
+      <li data-tag="Networking">
+        <h3><a href="https://meshtastic.org/" target="_blank" rel="noopener noreferrer">Meshtastic</a></h3>
+        <p>Open source LoRa mesh firmware and phone app for off-grid text communication between cheap radio boards.</p>
+        <span class="tag">Networking</span>
+      </li>
+      <li data-tag="Networking">
+        <h3><a href="https://bgp.tools/" target="_blank" rel="noopener noreferrer">bgp.tools</a></h3>
+        <p>Live BGP looking glass for inspecting ASNs, prefixes, and how routes propagate across the internet.</p>
+        <span class="tag">Networking</span>
+      </li>
+      <li data-tag="Networking">
+        <h3><a href="https://tailscale.com/" target="_blank" rel="noopener noreferrer">Tailscale</a></h3>
+        <p>WireGuard based mesh VPN for reaching self hosted services remotely without forwarding ports or exposing a public IP.</p>
+        <span class="tag">Networking</span>
+      </li>
+      <li data-tag="Networking">
+        <h3><a href="https://pingmynetwork.com/" target="_blank" rel="noopener noreferrer">PingMyNetwork</a></h3>
+        <p>Gamified browse -based practice for Cisco CCNA and CCNP topics using real CLI commands instead of video lectures.</p>
+        <span class="tag">Networking</span>
+      </li>
+      <li data-tag="Reading">
+        <h3><a href="https://www.whonix.org/wiki/Documentation" target="_blank" rel="noopener noreferrer">Whonix Documentation</a></h3>
+        <p>One of the most thorough privacy engineering wikis available, covering Tor isolation, VM design, and threat models regardless of whether you run Whonix itself.</p>
+        <span class="tag">Reading</span>
+      </li>
+      <li data-tag="Security">
+        <h3><a href="https://www.privacyguides.org/en/basics/threat-modeling/" target="_blank" rel="noopener noreferrer">Privacy Guides: Threat Modeling</a></h3>
+        <p>Framework for building a personal threat model by identifying what you are protecting, who wants it, how likely they are to try, and how much inconvenience the defense is worth.</p>
+        <span class="tag">Security</span>
+      </li>
+      <li data-tag="Security">
+        <h3><a href="https://coveryourtracks.eff.org/" target="_blank" rel="noopener noreferrer">Cover Your Tracks</a></h3>
+        <p>EFF tool that scores how unique and trackable your browser fingerprint is against a live sample of other visitors.</p>
+        <span class="tag">Security</span>
+      </li>
+      <li data-tag="Security">
+        <h3><a href="https://browserleaks.com/" target="_blank" rel="noopener noreferrer">BrowserLeaks</a></h3>
+        <p>Suite of tools that offers a range of tests to evaluate the security and privacy of your web browser. These tests focus on identifying ways in which websites may leak your real IP address, collect information about your device, and perform browser fingerprinting.</p>
+        <span class="tag">Security</span>
+      </li>
+      <li data-tag="Security">
+        <h3><a href="https://bazaar.abuse.ch/" target="_blank" rel="noopener noreferrer">MalwareBazaar</a></h3>
+        <p>abuse.ch repository of malware samples and IOCs for research and detection engineering.</p>
+        <span class="tag">Security</span>
+      </li>
+      <li data-tag="Youtube">
+        <h3><a href="https://www.youtube.com/@MentalOutlaw" target="_blank" rel="noopener noreferrer">Youtuber: Mental Outlaw</a></h3>
+        <p>Good youtuber to keep up with cyber news.</p>
+        <span class="tag">Youtube</span>
+      </li>
+      <li data-tag="Youtube">
+        <h3><a href="https://www.youtube.com/@dzumq" target="_blank" rel="noopener noreferrer">Youtuber: dzuma</a></h3>
+        <p>Good and funny videos on topics like opsec, Linux, OSINT, networking, and surveillance. Has pretty good takes.</p>
+        <span class="tag">Youtube</span>
+      </li>
+      <li data-tag="Youtube">
+        <h3><a href="https://www.youtube.com/@Fireship" target="_blank" rel="noopener noreferrer">Youtuber: Fireship</a></h3>
+        <p>Enjoy watching his videos to keep up with dev news, AI news, etc.</p>
+        <span class="tag">Youtube</span>
+      </li>
+      <li data-tag="Youtube">
+        <h3><a href="https://www.youtube.com/@LowLevelTV" target="_blank" rel="noopener noreferrer">Youtuber: Low Level</a></h3>
+        <p>Good for keeping up with the latest on reversing, recent CVEs, and malware.</p>
+        <span class="tag">Youtube</span>
+      </li>
+      <li data-tag="Security">
+        <h3><a href="https://www.abuseipdb.com/" target="_blank" rel="noopener noreferrer">AbuseIPDB</a></h3>
+        <p>Community database for checking and reporting abusive IP addresses.</p>
+        <span class="tag">Security</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://developers.onelogin.com/docs/saml/online-tools/" target="_blank" rel="noopener noreferrer">OneLogin SAML Online Tools</a></h3>
+        <p>Online tools for decoding, inspecting, and testing SAML messages and certificates.</p>
+        <span class="tag">Tools</span>
+      </li>
+      <li data-tag="Reading">
+        <h3><a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming" target="_blank" rel="noopener noreferrer">Azure Resource Naming Best Practices</a></h3>
+        <p>Microsoft Cloud Adoption Framework guidance on naming conventions for Azure resources.</p>
+        <span class="tag">Reading</span>
+      </li>
+      <li data-tag="Reading">
+        <h3><a href="https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html" target="_blank" rel="noopener noreferrer">SAML 2.0 Technical Overview</a></h3>
+        <p>OASIS technical overview of the SAML 2.0 specification, flows, and profiles.</p>
+        <span class="tag">Reading</span>
+      </li>
+      <li data-tag="Tools">
+        <h3><a href="https://graphpermissions.merill.net/permission/" target="_blank" rel="noopener noreferrer">Microsoft Graph Permissions Explorer</a></h3>
+        <p>Searchable reference of Microsoft Graph permissions and what each one grants.</p>
+        <span class="tag">Tools</span>
+      </li>
+    </ul>
+    <p id="empty" class="empty" hidden>No links match.</p>
+  </main>
+</div>
+<footer id="year">2026</footer>
+</body>
+</html>
